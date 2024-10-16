@@ -8,12 +8,19 @@ class Page2 extends StatefulWidget {
 }
 
 class _Page2State extends State<Page2> {
+  void atras() {
+    Navigator.pop(context);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Page 2')),
-      body: const Center(
-        child: Text('Page 2'),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: atras,
+          child: Text('Atrás'),
+        ),
       ),
     );
   }
