@@ -10,12 +10,13 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   void irAPagina2() {
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) => const Page2(),
-      ),
-    );
+    // Navigator.push(
+    //   context,
+    //   MaterialPageRoute(
+    //     builder: (context) => const Page2(),
+    //   ),
+    // );
+    Navigator.pushNamed(context, '/page2');
   }
 
   @override
